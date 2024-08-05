@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://tinhte.vn/thread/loat-xiaomi-12-chinh-thuc-ra-mat-snapdragon-8-gen-1-sac-nhanh-toi-da-120w.3455856/" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Loạt Xiaomi 12 chính thức ra mắt: Snapdragon 8 Gen 1, sạc nhanh tối đa 120W</h2>
+                </a>
+                <br/>
+                <h5>Tinhte.vn &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vnexpress.net/danh-gia-iphone-14-plus-su-thuc-dung-bi-lang-quen-4552522.html" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>Đánh giá iPhone 14 Plus</h2>
+                </a>
+                <br/>
+                <h5>VNEXPRESS &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://tinhte.vn/thread/review-galaxy-z-fold-4-tiep-tuc-hoan-thien-dong-z-fold-cao-cap.3558295/" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>Review Galaxy Z Fold 4: tiếp tục hoàn thiện dòng Z Fold cao cấp</h2>
+                </a>
+                <br/>
+                <h5>Tinhte.vn &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/hoi-dap/iphone-15-khi-nao-ra-mat-co-dang-de-nang-cap-1513012" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>iPhone 15 khi nào ra mắt? Có gì mới? Giá iPhone 15 mới nhất</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://fptshop.com.vn/tin-tuc/danh-gia/7-tieu-chi-de-ban-lua-chon-mua-smartphone-android-moi-155677" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>7 tiêu chí bạn nên quan tâm khi mua một chiếc smartphone Android trong năm 2023</h2>
+                </a>
+                <br/>
+                <h5>FPT &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

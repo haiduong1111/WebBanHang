@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+
+            <div class="page-info">
+                <p>Chào mừng bạn đến với trang web bán điện thoại di động - nơi tuyệt vời để khám phá và mua sắm những
+                    sản phẩm công nghệ hàng đầu. Tại đây, chúng tôi tự hào mang đến cho bạn một trải nghiệm mua sắm trực
+                    tuyến tuyệt vời với một loạt các điện thoại di động mới nhất và phong cách.</p>
+                <br />
+                <p>Với sự phát triển không ngừng của công nghệ, điện thoại di động ngày càng trở thành một phần quan
+                    trọng trong cuộc sống hàng ngày của chúng ta. Chúng tôi hiểu rằng bạn đang tìm kiếm những sản phẩm
+                    đáng tin cậy, đẳng cấp và mang tính đột phá để đáp ứng nhu cầu kỹ thuật cao và phong cách cá nhân.
+                </p>
+                <p>Để nâng cao thương hiệu của mình, mục tiêu của chúng tôi trong thời gian tới là cung cấp đến tận tay
+                    khách hàng những sản phẩm chính hãng với chất lượng đảm bảo và uy tín cũng như giá cả hợp lý nhất.
+                </p>
+                <p>Đội ngũ chuyên gia của chúng tôi đã lựa chọn kỹ càng từng sản phẩm, đảm bảo rằng chúng đáp ứng được
+                    các tiêu chí về hiệu suất, chất lượng và thiết kế. Chúng tôi cam kết cung cấp cho bạn những sản phẩm
+                    chính hãng, có đầy đủ các chứng nhận và bảo hành để bạn hoàn toàn yên tâm khi mua sắm tại đây.</p>
+                <p>Hơn thế nữa, trang web của chúng tôi cung cấp các thông tin chi tiết về từng sản phẩm, đánh giá của
+                    người dùng và những bài viết đánh giá chuyên sâu để bạn có thể đưa ra quyết định thông minh và tự
+                    tin. Bạn cũng có thể tận hưởng dịch vụ chăm sóc khách hàng tận tâm từ đội ngũ chúng tôi, luôn sẵn
+                    sàng trợ giúp bạn trong quá trình mua sắm và đáp ứng mọi thắc mắc của bạn.</p>
+                <p>Với sứ mệnh mang đến những sản phẩm công nghệ hàng đầu và trải nghiệm mua sắm tuyệt vời, chúng tôi hy
+                    vọng rằng bạn sẽ tìm thấy những điện thoại di động tuyệt vời và hài lòng với trải nghiệm mua sắm tại
+                    trang web của chúng tôi. Hãy khám phá ngay hôm nay và bước vào thế giới của công nghệ di động tuyệt
+                    vời!</p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
